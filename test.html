@@ -1,0 +1,139 @@
+<body>
+    <style>
+ body {
+        font: 15px 'Lucida sans', Arial, Helvetica;
+        color: #eee;
+     
+   text-align: center;
+    }
+    a {
+        color: #ffffff;   
+    }
+    /*-------------------------------------*/
+    
+    .cf:before, .cf:after{
+      content:"";
+      display:table;
+    }
+    
+    .cf:after{
+      clear:both;
+    }
+
+    .cf{
+      zoom:1;
+    }
+
+    /*-------------------------------------*/	
+    
+    .form-wrapper {
+        width: 570px;
+        padding: 18px;
+        margin: 5px;
+        background: #444;
+        background: rgba(0,0,0,.2);
+        -moz-border-radius: 10px;
+        -webkit-border-radius: 10px;
+        border-radius: 10px;
+        -moz-box-shadow: 0 1px 1px rgba(0,0,0,.4) inset, 0 1px 0 rgba(255,255,255,.2);
+        -webkit-box-shadow: 0 1px 1px rgba(0,0,0,.4) inset, 0 1px 0 rgba(255,255,255,.2);
+        box-shadow: 0 1px 1px rgba(0,0,0,.4) inset, 0 1px 0 rgba(255,255,255,.2);
+    }
+    
+    .form-wrapper input {
+        width: 450px;
+        height: 20px;
+        padding: 10px 5px;
+        float: left;    
+        font: 18px arial,sans-serif;
+        border: 0;
+        background: #eee;
+        -moz-border-radius: 3px 0 0 3px;
+        -webkit-border-radius: 3px 0 0 3px;
+        border-radius: 3px 0 0 3px;      
+    }
+    
+    .form-wrapper input:focus {
+        outline: 0;
+        background: #fff;
+        -moz-box-shadow: 0 0 2px rgba(0,0,0,.8) inset;
+        -webkit-box-shadow: 0 0 2px rgba(0,0,0,.8) inset;
+        box-shadow: 0 0 2px rgba(0,0,0,.8) inset;
+    }
+    
+    .form-wrapper input::-webkit-input-placeholder {
+       color: #999;
+       font-weight: normal;
+       font-style: bold ;
+    }
+    
+    .form-wrapper input:-moz-placeholder {
+        color: #999;
+        font-weight: normal;
+        font-style: bold;
+    }
+    
+    .form-wrapper input:-ms-input-placeholder {
+        color: #999;
+        font-weight: normal;
+        font-style: bold;
+    }    
+    
+    .form-wrapper button {
+		overflow: visible;
+        position: relative;
+        float: right;
+        border: 0;
+        padding: 0;
+        cursor: pointer;
+        height: 40px;
+        width: 110px;
+        font: bold 15px/40px 'lucida sans', 'trebuchet MS', 'Tahoma';
+        color: #fff;
+        text-transform: uppercase;
+        background: #4363aa;
+        -moz-border-radius: 0 3px 3px 0;
+        -webkit-border-radius: 0 3px 3px 0;
+        border-radius: 0 3px 3px 0;      
+        text-shadow: 0 -1px 0 rgba(0, 0 ,0, .3);
+    }   
+      
+    .form-wrapper button:hover{		
+        background: #4d6fb9;
+    }	
+      
+    .form-wrapper button:active,
+    .form-wrapper button:focus{   
+        background: #3B5998;    
+    }
+    
+    .form-wrapper button:before {
+        content: '';
+        position: absolute;
+        border-width: 8px 8px 8px 0;
+        border-style: solid solid solid none;
+        border-color: transparent #4363aa transparent;
+        top: 12px;
+        left: -6px;
+    }
+    
+    .form-wrapper button:hover:before{
+        border-right-color: #4d6fb9;
+    }
+    
+    .form-wrapper button:focus:before{
+        border-right-color: #3B5998;
+    }    
+    
+    .form-wrapper button::-moz-focus-inner {
+        border: 0;
+        padding: 0;
+    }
+    </style>
+   <form action="" method="post" name="myform" id="myform" onsubmit="return formSubmit(this);" class="form-wrapper cf">
+      <input name="statusid" autocomplete="off" id="statusid" placeholder="Enter ID Here" type="text">
+      <input name="submit_btn" class="submit" id="submit_btn" value="" placeholder="submit" style="
+    overflow: visible;  position: relative;  float: right;  border: 0;  padding: 0;  cursor: pointer;  height: 40px;  width: 110px;  font: bold 15px/40px 'lucida sans', 'trebuchet MS', 'Tahoma';  color: #fff;  text-transform: uppercase;  background: #4363aa;  -moz-border-radius: 0 3px 3px 0;  -webkit-border-radius: 0 3px 3px 0;  border-radius: 0 3px 3px 0;  text-shadow: 0 -1px 0 rgba(0, 0 ,0, .3);
+">
+   </form>
+</body>
