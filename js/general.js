@@ -83,7 +83,7 @@ $(document).ready(function() {
             }
             function mandrill() {
                 var formData = {
-                    "key": "1-mhUdqJ5OFL3LXYxqyeFA",
+                    "key": "tE4LcupzZOjrhKrq9vKpMQ",
                     "message": {
                         "html": "<h3>New Lead!</h3><p>Name: "+fname+" "+lname+"<br>Email: "+email+"<br>Phone Number: ("+phone1+")-"+phone2+"-"+phone3+"<br>State: "+state+"<br>Student Loan Debt Amount: "+sloan+"<br>Credit Card Debt: "+credit+"</p>",
                         "subject": "Easy Student Loan",
@@ -91,8 +91,8 @@ $(document).ready(function() {
                         "from_name": fname,
                         "to": [
                             {
-                            "email": "chriskanze@gmail.com",
-                            "name": "Chris Kanze",
+                            "email": "alton@finleysolutions.com",
+                            "name": "Alton",
                             "type": "to"
                             }
                         ]
@@ -105,8 +105,8 @@ $(document).ready(function() {
                     data : formData,
                     success: function(data, textStatus, jqXHR){
                         console.log("SUBMITTED")
-			$('.submit').replaceWith('<button type="button" class="btn btn-success submit">Sent!</button>')
-			window.location.href  = 'https://www.finleysolutions.com/student-loan-reform.html';
+			$('.submit').replaceWith('<button type="button" class="btn btn-success submit" disabled>Sent!</button>')
+			alert("Thank you for your submission, we're excited to help people reduce their student loan payments! A student loan financial councellor will contact you shortly");
 			
 			
                     },
